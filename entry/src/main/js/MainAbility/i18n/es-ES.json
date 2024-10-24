@@ -1,0 +1,28 @@
+{
+  "strings": {
+    "device": {
+      "data" : "INFORMACIÓN DEL DISPOSITIVO",
+      "brand": "marca: ",
+      "manufacturer": "fabricante",
+      "model": "modelo",
+      "product" : "producto",
+      "apiVersion": "versión API",
+      "region": "región",
+      "button": "Obtener info"
+    },
+    "sensors": {
+      "button" : "Lee sensor",
+      "accelerometer" : "ACELERÓMETRO",
+      "steps" : {
+        "title": "PODÓMETRO",
+        "steps" : "pasos"
+      },
+      "onbody" : "¿EN EL CUERPO?",
+      "barometer": "PRESIÓN BAROMÉTRICA",
+      "hr" : {
+        "title": "PULSO",
+        "bpm": "PPM"
+      }
+    }
+  }
+}

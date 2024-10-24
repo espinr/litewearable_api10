@@ -1,0 +1,40 @@
+<div class="container">
+    <swiper class="swiper" index="{{index}}">
+        <div class="swiper-item item-1">
+            <text class="item-1 title">{{ $t("strings.device.data", { brand: device.brand, region: device.region, apiVersion: device.apiVersion, manufacturer: device.manufacturer, model: device.model, product: device.product }) }}</text>
+            <list class="item-1 device-info-list">
+                <list-item class="device-info-list-item">{{ $t("strings.device.brand") }}</list-item>
+                <list-item class="device-info-list-item"><text class="item-1">{{ $t("strings.device.manufacturer") }}: {{device.manufacturer}}</text></list-item>
+                <list-item class="device-info-list-item"><text class="item-1">{{ $t("strings.device.model") }}: {{device.model}}</text></list-item>
+                <list-item class="device-info-list-item"><text class="item-1">{{ $t("strings.device.product") }}: {{device.product}}</text></list-item>
+                <list-item class="device-info-list-item"><text class="item-1">{{ $t("strings.device.region") }}: {{device.region}}</text></list-item>
+                <list-item class="device-info-list-item"><text class="item-1">{{ $t("strings.device.apiVersion") }}: {{device.apiVersion}}</text></list-item>
+            </list>
+            <input type="button" if="{{!reading.info}}" class="primary-button" on:click="getInfoDevice()" >{{ $t("strings.device.button") }}</input>
+        </div>
+        <!-- Steps -->
+        <div class="swiper-item item-2">
+            <text class="item-2 title">{{ $t("strings.sensors.steps.title") }}</text>
+            <div class="steps-reading-panel">
+                <text class="item-2">{{sensors.steps}} {{ $t("strings.sensors.steps.steps") }}</text>
+            </div>
+            <input type="button" if="{{!reading.steps}}" class="primary-button" on:click="readSteps()" >{{ $t("strings.sensors.button") }}</input>
+        </div>
+        <!-- On Body -->
+        <div class="swiper-item item-3">
+            <text class="item-3 title">{{ $t("strings.sensors.onbody") }}</text>
+            <div class="results-panel">
+                <text class="item-3">{{sensors.onbody}}</text>
+            </div>
+            <input type="button" if="{{!reading.onbody}}" class="primary-button" on:click="readOnBody()" >{{ $t("strings.sensors.button") }}</input>
+        </div>
+        <!-- Barometer -->
+        <div class="swiper-item item-4">
+            <text class="item-4 title">{{ $t("strings.sensors.barometer") }}</text>
+            <div class="results-panel">
+                <text class="item-4">{{sensors.barometer}}</text>
+            </div>
+            <input type="button" if="{{!reading.barometer}}" class="primary-button" on:click="readBarometer()" >{{ $t("strings.sensors.button") }}</input>
+        </div>
+    </swiper>
+</div>

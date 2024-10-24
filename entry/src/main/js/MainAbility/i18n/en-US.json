@@ -1,0 +1,28 @@
+{
+  "strings": {
+    "device": {
+      "data" : "DEVICE INFORMATION",
+      "brand": "Brand: ",
+      "manufacturer": "manufacturer",
+      "model": "model",
+      "product" : "product",
+      "apiVersion": "apiVersion",
+      "region": "region",
+      "button": "Get device info"
+    },
+    "sensors": {
+      "button" : "Read sensor",
+      "accelerometer" : "ACCELEROMETER",
+      "steps" : {
+        "title": "STEP COUNTER",
+        "steps" : "steps"
+      },
+      "onbody" : "ON BODY?",
+      "barometer": "BAROMETRIC PRESSURE",
+      "hr" : {
+        "title": "HEART RATE",
+        "bpm": "BPM"
+      }
+    }
+  }
+}
