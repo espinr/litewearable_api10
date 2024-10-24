@@ -1,6 +1,19 @@
 {
   "app": {
     "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "storePassword": "0000001D80D3D0FAAAAAAAAD038687B31889B4A5D8C8A484A90CE0BAD23807CFFE",
+          "certpath": "XXXX/espinr.cer",
+          "keyAlias": "espinr",
+          "keyPassword": "0000001D7C573D6629CFC6AAAAAAAAAAAA54C74A2808B5",
+          "profile": "XXXXX/Lite Wearable API 4Debug.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "XXXXX/espinr.p12"
+        }
+      }
     ],
     "products": [
       {
